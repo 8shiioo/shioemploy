@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    overflow-y: hidden;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url("bg.jpg");
+}
+
+h1{
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+
+.container{
+    position: relative;
+    top: 20%;
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+ .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+ .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+ .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.116);
+    text-align: center;
+    padding:30px 20px;
+    transition: 1s;
+   
+    
+}
+
+ .box-container .box img{
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container .box-container .box h3{
+    color:#ffffff;
+    font-size: 22px;
+    padding:10px 0;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#ffffff8c;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 4px 12.5px;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+.container .box-container .box .btn:hover{
+    transform: scale(1.1);
+   transition: 0.7s;
+   background-color: rgba(255, 255, 255, 0.815);
+color: black;
+   
+  
+}
+
+
+
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+    transition: 1s;
+   
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+.updatepop{
+    transition: 1s;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 500px;
+    height: 500px;
+   text-align: center;
+   left: 36%;
+   border-radius: 10px;
+   display: none;
+   
+}
+
+.updatepop h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.updatepop p{
+    color: white;
+    position: relative;
+    top: 20%;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.updatepop:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.updatepop button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 40%;
+    text-decoration: none;
+    background-color: red;
+}
+
+.updatepop button:hover{
+    background-color: black;
+    color: red;
+    transition: 0.5s;
+    
+}

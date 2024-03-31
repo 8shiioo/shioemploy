@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiioo Employ</title>
+    <link rel="shortcut icon" type="m-icon" href="meda.jpeg">
+</head>
+<body>
+
+
+
+    <div id="particles-js">
+        <h1>Shiioo Employ</h1>
+        <div class="container">
+
+       
+    
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="kourimgicon.png" alt="">
+                    <h3>Kour Client v.1.1</h3>
+                    <p>Install the newest Kour Client</p>
+                    <a href="kour-client Setup 0.0.1.exe" class="btn">Install-Setup</a>
+                    <a href="#" onclick="alert('First: Right click the file and go to properties Then: Put / --disable-frame-rate-limit / into location Last: Apply')" class="btn">Unlimited FPS</a>
+                    <a href="https://discord.gg/kour" class="btn">Discord</a>
+                    <a href="#" onclick="show()" class="btn">Updates</a>
+                    <a href=" https://github.com/BCgameDev/Kour-Lightweight-Client"  class="btn">Source Code</a>
+                </div>
+        
+
+            </div>
+           
+        </div>
+
+        <div class="container">
+
+       
+    
+        
+        
+        
+    <div id="updatepop" class="updatepop">
+        <h1>Updates</h1>
+        <p>no current updates</p>
+        <button onclick="hide()">close</button>
+    </div>
+
+    </div>
+    
+
+    <!--particles js files-->
+    <script src="particles.js">   </script>
+    <script src="app.js">   </script>
+
+    
+  
+</body>
+<script>
+
+var div = document.getElementById('updatepop');
+var display = 0;
+
+
+function show () {
+    div.style.display = 'block';
+}
+function hide () {
+    div.style.display = 'none';
+}
+
+</script>
+</html>
